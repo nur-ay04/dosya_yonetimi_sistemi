@@ -5,11 +5,12 @@ const fs = require('fs');
 const multer = require('multer');
 const cors = require('cors');
 const path = require('path');
+require('dotenv').config();
 
 
 const app = express();
 const PORT = 3000;
-const SECRET_KEY = "gizliAnahtar"; // JWT için gizli anahtar
+const SECRET_KEY = process.env.JWT_SECRET;
 app.use(express.static(path.join(__dirname, '../frontend')));
 app.use(cors());
 app.use(express.json());
