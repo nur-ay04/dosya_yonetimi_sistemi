@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dosya Yöneticisi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Dosya Yönetimi</h1>
+    <h2 id="welcome"></h2>
+    <button id="logoutBtn" class="logout-button">Çıkış Yap</button>
+
+    <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg">
+    <button onclick="uploadFile()">Dosya Yükle</button>
+
+    <h2>Yüklenen Dosyalar</h2>
+    <ul id="fileList"></ul>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
