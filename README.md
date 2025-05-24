@@ -25,7 +25,11 @@ cd dosya_yonetimi_sistemi
 ```bash
 npm install
 ```
-### 4. Sunucuyu başlatma
+### 4. .env Dosyasını Proje Ana Dizinine Oluşturun ve İçinde Şu Satırı Ekleyin:
+```bash
+JWT_SECRET=gizli_anahtar123
+```
+### 5. Sunucuyu başlatma
 ```bash
 npm start
 ```
